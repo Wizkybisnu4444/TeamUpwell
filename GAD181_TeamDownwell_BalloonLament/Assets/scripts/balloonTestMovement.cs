@@ -20,8 +20,8 @@ public class balloonTestMovement : MonoBehaviour
     void Update()
     {
         // Gives a value between -1 and 1
-        horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
-        vertical = Input.GetAxisRaw("Vertical"); // -1 is down
+        horizontal = Input.GetAxis("Horizontal"); // -1 is left
+        vertical = Input.GetAxis("Vertical"); // -1 is down
     }
 
     void FixedUpdate()
