@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BGscrolling_script : MonoBehaviour
 {
-    public float speed = 4f;
+    public float speed = 30f;
     private Vector3 StartPosition;
 
 
