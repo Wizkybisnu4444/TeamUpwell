@@ -8,7 +8,7 @@ public class balloonTestMovement : MonoBehaviour
 
     float horizontal;
     float vertical;
-    float moveLimiter = 0.7f;
+    float moveLimiter = 1.1f;
 
     public float runSpeed = 20.0f;
 
