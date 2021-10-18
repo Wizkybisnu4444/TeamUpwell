@@ -3290,6 +3290,7 @@ m_PackageAssets:
         - 1.1.0-preview.1
         - 1.1.0
         - 1.2.1
+        - 1.2.4
         compatible:
         - 0.0.12-preview.2
         - 0.0.12-preview.5
@@ -3305,7 +3306,8 @@ m_PackageAssets:
         - 1.1.0-preview.1
         - 1.1.0
         - 1.2.1
-        verified: 1.2.1
+        - 1.2.4
+        verified: 1.2.4
       dependencies: []
       resolvedDependencies: []
       keywords:
@@ -3368,6 +3370,12 @@ m_PackageAssets:
         - 4.0.2
         - 4.0.3
         - 5.0.0-pre.1
+        - 5.0.0-pre.2
+        - 5.0.0
+        - 6.0.0-pre.2
+        - 6.0.0-pre.3
+        - 6.0.0-pre.4
+        - 6.0.0
         compatible:
         - 4.0.3
         verified: 4.0.3
@@ -3441,6 +3449,7 @@ m_PackageAssets:
         - 2.0.5
         - 2.0.6
         - 2.1.0
+        - 2.1.1
         - 3.0.0
         - 3.0.1
         - 3.0.2
@@ -3448,6 +3457,9 @@ m_PackageAssets:
         - 4.0.1
         - 4.0.2
         - 5.0.0-pre.1
+        - 5.0.0-pre.2
+        - 5.0.0
+        - 5.0.1
         compatible:
         - 4.0.2
         verified: 4.0.2
@@ -3468,7 +3480,7 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637637511040000000
       documentationUrl: 
       hasRepository: 1
       repository:
