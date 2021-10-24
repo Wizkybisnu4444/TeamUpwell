@@ -8,6 +8,7 @@ public class healthScript : MonoBehaviour
     public GameObject healthII;
     public GameObject healthIII;
     public int healthN = 0;
+    public GameObject gameOver;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +46,7 @@ public class healthScript : MonoBehaviour
                         healthI.gameObject.SetActive(false);
                         healthII.gameObject.SetActive(false);
                         healthIII.gameObject.SetActive(false);
+                        gameOver.gameObject.SetActive(true);
                     }
                 }
             }
@@ -92,6 +94,7 @@ public class healthScript : MonoBehaviour
                 healthI.gameObject.SetActive(false);
                 healthII.gameObject.SetActive(false);
                 healthIII.gameObject.SetActive(false);
+                gameOver.gameObject.SetActive(true);
             }
         }
         if (collision.gameObject.name.Contains("redGhost"))
@@ -100,6 +103,7 @@ public class healthScript : MonoBehaviour
             healthI.gameObject.SetActive(false);
             healthII.gameObject.SetActive(false);
             healthIII.gameObject.SetActive(false);
+            gameOver.gameObject.SetActive(true);
         }
     }
 }
