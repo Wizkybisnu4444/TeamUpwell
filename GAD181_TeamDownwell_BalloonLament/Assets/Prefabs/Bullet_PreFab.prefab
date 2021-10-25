@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 574205723353491830}
   - component: {fileID: 2101125550950648004}
   - component: {fileID: 6160345608661415009}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bullet_PreFab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,9 +72,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1983698885
   m_SortingLayer: 2
-  m_SortingOrder: 15
+  m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.19497792, g: 0.9339623, b: 0.110137045, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

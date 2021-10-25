@@ -6,7 +6,7 @@ public class bulletScript : MonoBehaviour
 {
 
     public Rigidbody2D rb2D;
-    private GameObject bulletSpawn;
+    private GameObject BulletSpawn;
     public float speed;
 
 
@@ -19,7 +19,7 @@ public class bulletScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bulletSpawn = GameObject.FindWithTag("emitter");
+        BulletSpawn = GameObject.FindWithTag("emitter");
 
     }
 
@@ -29,7 +29,7 @@ public class bulletScript : MonoBehaviour
         //rb2D.AddForce(Player.transform.up * speed);
         
 
-        rb2D.AddRelativeForce(bulletSpawn.transform.up * speed, ForceMode2D.Impulse);
+        rb2D.AddRelativeForce(BulletSpawn.transform.up * speed, ForceMode2D.Impulse);
 
     }
 }
