@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2805979663504475965}
   - component: {fileID: 2805979663504475967}
   m_Layer: 5
-  m_Name: birdAnimObject_01 1
+  m_Name: BirdAnimObject_01 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
