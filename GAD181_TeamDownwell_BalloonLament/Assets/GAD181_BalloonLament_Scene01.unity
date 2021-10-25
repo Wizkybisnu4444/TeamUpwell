@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CloudBlock01
       objectReference: {fileID: 0}
+    - target: {fileID: 1122458380155633226, guid: 2c464d3e39b278949802d47b23a64c9a, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1978851222480371124, guid: 2c464d3e39b278949802d47b23a64c9a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -327,6 +331,10 @@ PrefabInstance:
     - target: {fileID: 7686297009640478164, guid: d335c4127b917e24eae987d7548f6171, type: 3}
       propertyPath: m_Name
       value: PlayerSpriteGreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686297009640478164, guid: d335c4127b917e24eae987d7548f6171, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8885008526246306487, guid: d335c4127b917e24eae987d7548f6171, type: 3}
       propertyPath: m_Size.x
@@ -865,7 +873,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -1034,7 +1042,7 @@ GameObject:
   m_Component:
   - component: {fileID: 917122885}
   - component: {fileID: 917122886}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: BulletSpawn
   m_TagString: emitter
   m_Icon: {fileID: 0}
@@ -1213,7 +1221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1293830034}
   - component: {fileID: 1293830035}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1347,7 +1355,7 @@ GameObject:
   - component: {fileID: 1409238385}
   - component: {fileID: 1409238387}
   - component: {fileID: 1409238386}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: CrescentMoonObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
