@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class balloonTestMovement : MonoBehaviour
+public class playerMovement : MonoBehaviour
 {
+
     Rigidbody2D body;
 
     float horizontal;
@@ -11,6 +12,8 @@ public class balloonTestMovement : MonoBehaviour
     float moveLimiter = 1.1f;
 
     public float runSpeed = 20.0f;
+
+    float Vector2;
 
     void Start()
     {
@@ -35,4 +38,5 @@ public class balloonTestMovement : MonoBehaviour
 
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
+
 }
