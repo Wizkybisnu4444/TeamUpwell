@@ -41,7 +41,7 @@ public class PlayerMovementNov1Update : MonoBehaviour
         Input.GetKey(KeyCode.Tab);
     }
 
-    // Fixed Update gives forces for each movement if controls from update are active
+    // Fixed Update gives forces for each movement if controls for engine, left and right from update are active
     private void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.A) {
@@ -49,8 +49,11 @@ public class PlayerMovementNov1Update : MonoBehaviour
         }
 
         else if (Input.GetKey(KeyCode.D){
-
+            this.rigidbody.AddForce(this.transform.right * this.floatingSpeed);
         } 
 
     }
+
+
+    //Still need auto descend. . .
 }
