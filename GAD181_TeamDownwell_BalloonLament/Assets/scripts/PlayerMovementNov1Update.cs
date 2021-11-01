@@ -4,6 +4,31 @@ using UnityEngine;
 
 public class PlayerMovementNov1Update : MonoBehaviour
 {
+    //RB is calling for Rigidbody2D
+    public new Rigidbody2D RB;
+
+    //Horizontal Position float Horizontal
+    float horizontal;
+
+    //Vertical Position float Vertical
+    float vertical;
+
+    //Limits the diagonal speeds
+    float diagonalSpeedLimit = 1.0f;
+
+    //The speed of floating the balloon left or right
+    public float floatingSpeed = 20.0f;
+
+    //The speed of the balloon in an upward direction when engaging engine
+    public float engineSpeed = 100.0f;
+
+    //The constant speed of the balloon as it decends down the screen
+    public float balloonDescentSpeed = 10.0f;
+
+    //The time of invunrablility in seconds for the Damage Booster mechanic after taking a hit
+    public float damageBooster = 3.0f;
+
+    float Vector2;
     // Start is called before the first frame update
     void Start()
     {
