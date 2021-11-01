@@ -48,6 +48,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\scripts\ShootingNov01Update.cs" />
+     <Compile Include="Assets\scripts\playerController.cs" />
      <Compile Include="Assets\scripts\shooting.cs" />
      <Compile Include="Assets\scripts\BalloonForceMovement.cs" />
      <Compile Include="Assets\scripts\PlayerMovementNov1Update.cs" />
