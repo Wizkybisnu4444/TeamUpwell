@@ -28,7 +28,12 @@ public class PlayerMovementNov1Update : MonoBehaviour
     //The time of invunrablility in seconds for the Damage Booster mechanic after taking a hit
     public float damageBooster = 3.0f;
 
-    float Vector2;
+    private void Awake()
+    {
+        this.rigidbody = GetComponent<Rigidbody2D>();
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
