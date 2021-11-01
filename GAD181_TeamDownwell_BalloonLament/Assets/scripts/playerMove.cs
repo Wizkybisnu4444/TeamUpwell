@@ -42,7 +42,7 @@ public class playerMove : MonoBehaviour
         float xInput = Input.GetAxis("Horizontal");
         float yInput = Input.GetAxis("Vertical");
 
-        float xForce = xInput * thrustSpeed * Time.deltaTime;
+        float xForce = xInput * _turnDirection * Time.deltaTime;
 
         Vector2 force = new Vector2(xForce, 0);
 
