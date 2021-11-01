@@ -25,6 +25,15 @@ public class PlayerMovementNov1Update : MonoBehaviour
     //The constant speed of the balloon as it decends down the screen
     public float balloonDescentSpeed = 10.0f;
 
+    //Is the player floating left?
+    public bool floatLeft;
+
+    //Is the player floating right?
+    public bool floatRight;
+
+    //Is the player igniting the engine?
+    public bool engineIgnition;
+
     //Gets the Rigidbody2D
     private void Awake()
     {
@@ -34,26 +43,44 @@ public class PlayerMovementNov1Update : MonoBehaviour
     void Update()
     {
         //Left control
-        Input.GetKey(KeyCode.A);
+        if Input.GetKey(KeyCode.A){
+            floatLeft = true; }
+        else
+            floatLeft = false;
         //Right control
         Input.GetKey(KeyCode.D);
+        if Input.GetKey(KeyCode.A){
+            floatRight = true;
+        }
+        else
+            floatRight = false;
         //Engine on (up control)
-        Input.GetKey(KeyCode.Tab);
+        if Input.GetKey(KeyCode.Tab){
+            engineIgnition = true;
+        }
+        else
+            engineIgnition = false;
+        }
     }
 
     // Fixed Update gives forces for each movement if controls for engine, left and right from update are active
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.A) {
-            this.rigidbody.AddForce(this.transform.left * this.floatingSpeed);
+        if floatLeft = true; {
+        this.rigidbody.AddForce(this.transform.left * this.floatingSpeed);
         }
-
-        else if (Input.GetKey(KeyCode.D){
-            this.rigidbody.AddForce(this.transform.right * this.floatingSpeed);
-        } 
-
+        if (Input.GetKey(KeyCode.D){
+        this.rigidbody.AddForce(this.transform.right * this.floatingSpeed);
+        }
+        if
+        engineIgnition = true;
+        {
+        this.rigidbody.AddForce(this.transform.up * this.engineSpeed);
+        }
+        else
+        {
+        this.rigidbody.AddForce(this.transform.down * this.balloonDescentSpeed);
+        }
     }
 
-
-    //Still need auto descend. . .
 }
