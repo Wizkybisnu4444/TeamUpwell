@@ -18,6 +18,9 @@ public class PlayerMovementNov1Update : MonoBehaviour
 
     //The speed of floating the balloon left or right
     public float floatingSpeed = 20.0f;
+    
+    //The boolean value for whether or not the player is moving left or right
+    public bool floating { get; private set; }
 
     //The speed of the balloon in an upward direction when engaging engine
     public float engineSpeed = 100.0f;
@@ -25,19 +28,13 @@ public class PlayerMovementNov1Update : MonoBehaviour
     //The constant speed of the balloon as it decends down the screen
     public float balloonDescentSpeed = 10.0f;
 
-    //The time of invunrablility in seconds for the Damage Booster mechanic after taking a hit
-    public float damageBooster = 3.0f;
-
-    float Vector2;
-    // Start is called before the first frame update
-    void Start()
+    //Gets the Rigidbody2D
+    private void Awake()
     {
-        
+        this.RB = GetComponent<Rigidbody2D>();
     }
-
     // Update is called once per frame
     void Update()
-    {
-        
+    { }
     }
 }
