@@ -18,9 +18,6 @@ public class PlayerMovementNov1Update : MonoBehaviour
 
     //The speed of floating the balloon left or right
     public float floatingSpeed = 20.0f;
-    
-    //The boolean value for whether or not the player is moving left or right
-    public bool floating { get; private set; }
 
     //The speed of the balloon in an upward direction when engaging engine
     public float engineSpeed = 100.0f;
@@ -33,8 +30,27 @@ public class PlayerMovementNov1Update : MonoBehaviour
     {
         this.RB = GetComponent<Rigidbody2D>();
     }
-    // Update is called once per frame
+    // Update is called once per frame and detects whether the player is pressing a key
     void Update()
     {
+        //Left control
+        Input.GetKey(KeyCode.A);
+        //Right control
+        Input.GetKey(KeyCode.D);
+        //Engine on (up control)
+        Input.GetKey(KeyCode.Tab);
+    }
+
+    // Fixed Update gives forces for each movement if controls from update are active
+    private void FixedUpdate()
+    {
+        if (Input.GetKey(KeyCode.A) {
+            this.rigidbody.AddForce(this.transform.left * this.floatingSpeed);
+        }
+
+        else if (Input.GetKey(KeyCode.D){
+
+        } 
+
     }
 }
