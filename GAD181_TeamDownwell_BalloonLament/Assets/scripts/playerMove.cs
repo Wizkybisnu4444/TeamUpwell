@@ -12,6 +12,8 @@ public class playerMove : MonoBehaviour
 
     public int thrustSpeed;
 
+    private bool _descend;
+
 
 
     // Update is called once per frame
@@ -25,6 +27,8 @@ public class playerMove : MonoBehaviour
 
         _thrusting = Input.GetKey(KeyCode.Tab);
 
+        _descend = Input.GetKey(KeyCode.DownArrow);
+
     }
 
     void FixedUpdate()
@@ -34,6 +38,12 @@ public class playerMove : MonoBehaviour
         {
             _rb.AddForce(this.transform.up * this.thrustSpeed);
         }
+
+        if (_descend)
+        {
+            _rb.AddForce(this.transform.up * -10);
+        }
+
     }
 
 
