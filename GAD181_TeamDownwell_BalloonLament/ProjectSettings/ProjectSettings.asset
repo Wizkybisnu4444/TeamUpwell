@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: GAD181_TeamDownwell_BalloonLament
+  companyName: Team Upwell
+  productName: Balloon Lament
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -153,7 +153,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.DefaultCompany.GAD181TeamDownwellBalloonLament
+    Standalone: com.TeamUpwell.BalloonLament
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -270,7 +270,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 8d7464e6d065a2445ba52fd3412e8260, type: 3}
+      m_Icon: {fileID: 2800000, guid: 44ee84e56e1afcc429152a3e1b2975f0, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0

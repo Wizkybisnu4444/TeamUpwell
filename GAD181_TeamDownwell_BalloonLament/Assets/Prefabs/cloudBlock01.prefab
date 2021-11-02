@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 8852087923772611170}
   - component: {fileID: 6454724845456057374}
   - component: {fileID: 4692365665756977862}
-  m_Layer: 0
-  m_Name: CloudBlock01
+  - component: {fileID: 6165686917756112158}
+  m_Layer: 5
+  m_Name: cloudBlock01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -118,9 +119,22 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.1
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
+--- !u!114 &6165686917756112158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122458380155633226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14e36c30cef94284b9c83cb32e2b55ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 2

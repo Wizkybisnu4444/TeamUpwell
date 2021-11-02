@@ -1,8 +1,14 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - BGscrolling_script
-    - balloonTestMovement
+    - BulletBehaviour
+    - CloudBehaviour
+    - EnemyBehaviour
+    - FiveSeconds
+    - ReloadScene
+    - healthScript
+    - playerMove
+    - playerMovement
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -12,6 +18,8 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -37,12 +45,13 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/GAD181_BalloonLament_Scene01.unity:
+    Assets/Scenes/BalloonLament.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -61,6 +70,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 70
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
@@ -75,8 +86,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
-    - Class: 111
-      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1478}
     - Class: 114
@@ -84,25 +93,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1838}
     - Class: 114
-      Script: {instanceID: 2218}
+      Script: {instanceID: 2050}
     - Class: 114
-      Script: {instanceID: 2226}
+      Script: {instanceID: 2102}
     - Class: 114
-      Script: {instanceID: 2640}
+      Script: {instanceID: 2222}
     - Class: 114
-      Script: {instanceID: 2800}
+      Script: {instanceID: 2230}
     - Class: 114
-      Script: {instanceID: 3016}
+      Script: {instanceID: 2394}
     - Class: 114
-      Script: {instanceID: 3260}
+      Script: {instanceID: 2528}
     - Class: 114
-      Script: {instanceID: 4354}
+      Script: {instanceID: 2600}
     - Class: 114
-      Script: {instanceID: 4702}
+      Script: {instanceID: 2650}
     - Class: 114
-      Script: {instanceID: 5012}
+      Script: {instanceID: 2812}
     - Class: 114
-      Script: {instanceID: 5080}
+      Script: {instanceID: 3028}
+    - Class: 114
+      Script: {instanceID: 3274}
+    - Class: 114
+      Script: {instanceID: 3386}
+    - Class: 114
+      Script: {instanceID: 3754}
+    - Class: 114
+      Script: {instanceID: 4718}
+    - Class: 114
+      Script: {instanceID: 5096}
+    - Class: 114
+      Script: {instanceID: 5244}
+    - Class: 114
+      Script: {instanceID: 5294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -210,6 +233,18 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: c7a1cfbcd815f35b6700d8538ef4094e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CloudBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ReloadScene
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -240,6 +275,12 @@ ScriptsOnlyBuild:
     className: CinemachinePixelPerfect
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FiveSeconds
+  - hash:
+      serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -252,6 +293,18 @@ ScriptsOnlyBuild:
     className: IKManager2D
   - hash:
       serializedVersion: 2
+      Hash: 2c50ba461c9b78ac09e8e0d20ae8b30d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BulletBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyBehaviour
+  - hash:
+      serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -262,6 +315,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShootingNov01Update
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -336,6 +395,12 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: b7513689c24f6258d68d47d61a59a0ee
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: shooting
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -408,6 +473,12 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
+      Hash: a94eaa9b673159c1f0f205d04e5668d9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: playerMove
+  - hash:
+      serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -424,6 +495,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BalloonForceMovement
   - hash:
       serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
@@ -502,12 +579,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
-  - hash:
-      serializedVersion: 2
-      Hash: d8f94044afbde50af72c986848e54d50
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: balloonTestMovement
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -618,6 +689,24 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: d085229c5be71a43020b803be82b18f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: healthScript
+  - hash:
+      serializedVersion: 2
+      Hash: 011f718d4142befb3e767119db84177f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: bulletScript
+  - hash:
+      serializedVersion: 2
+      Hash: d8f94044afbde50af72c986848e54d50
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: playerMovement
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
@@ -654,5 +743,5 @@ ScriptsOnlyBuild:
     className: FabrikSolver2D
   platform: 19
   scenePathNames:
-  - Assets/GAD181_BalloonLament_Scene01.unity
-  playerPath: C:/Users/Wayne/Desktop/balloonLamentTestBuild/GAD181_TeamDownwell_BalloonLament.exe
+  - Assets/Scenes/BalloonLament.unity
+  playerPath: C:/Users/Geoffrey/Documents/Balloon Lament/Balloon Lament.exe

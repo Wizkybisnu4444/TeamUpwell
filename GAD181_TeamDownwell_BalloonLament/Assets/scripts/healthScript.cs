@@ -9,6 +9,8 @@ public class healthScript : MonoBehaviour
     public GameObject healthIII;
     public int healthN = 0;
     public GameObject gameOver;
+    public int kills = 0;
+    public GameObject victory;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +49,7 @@ public class healthScript : MonoBehaviour
                         healthII.gameObject.SetActive(false);
                         healthIII.gameObject.SetActive(false);
                         gameOver.gameObject.SetActive(true);
+                        Destroy(gameObject);
                     }
                 }
             }
@@ -69,6 +72,10 @@ public class healthScript : MonoBehaviour
                     }
                 }
             }
+        }
+        if (kills > 8)
+        {
+            victory.gameObject.SetActive(true);
         }
     }
     public void OnCollisionEnter2D(Collision2D collision)
@@ -95,6 +102,32 @@ public class healthScript : MonoBehaviour
                 healthII.gameObject.SetActive(false);
                 healthIII.gameObject.SetActive(false);
                 gameOver.gameObject.SetActive(true);
+                Destroy(gameObject);
+            }
+        }
+        if (collision.gameObject.name.Contains("BirdAnimObject01")||collision.gameObject.name.Contains("birdAnimObject_01 1"))
+        {
+            --healthN;
+            if (healthN == 2)
+            {
+                healthIII.gameObject.SetActive(false);
+                healthI.gameObject.SetActive(true);
+                healthII.gameObject.SetActive(true);
+            }
+            if (healthN == 1)
+            {
+                healthIII.gameObject.SetActive(false);
+                healthII.gameObject.SetActive(false);
+                healthI.gameObject.SetActive(true);
+            }
+            if (healthN == 0)
+            {
+
+                healthI.gameObject.SetActive(false);
+                healthII.gameObject.SetActive(false);
+                healthIII.gameObject.SetActive(false);
+                gameOver.gameObject.SetActive(true);
+                Destroy(gameObject);
             }
         }
         if (collision.gameObject.name.Contains("redGhost"))
@@ -104,6 +137,7 @@ public class healthScript : MonoBehaviour
             healthII.gameObject.SetActive(false);
             healthIII.gameObject.SetActive(false);
             gameOver.gameObject.SetActive(true);
+            Destroy(gameObject);
         }
     }
 }
