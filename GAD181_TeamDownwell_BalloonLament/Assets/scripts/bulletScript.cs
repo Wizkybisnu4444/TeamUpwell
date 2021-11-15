@@ -29,7 +29,7 @@ public class bulletScript : MonoBehaviour
         //rb2D.AddForce(Player.transform.up * speed);
         
 
-        rb2D.AddRelativeForce(BulletSpawn.transform.up * speed, ForceMode2D.Impulse);
+        rb2D.AddForce(transform.up * speed, ForceMode2D.Impulse);
 
     }
 }
