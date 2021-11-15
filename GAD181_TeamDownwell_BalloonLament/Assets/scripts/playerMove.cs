@@ -28,7 +28,6 @@ public class playerMove : MonoBehaviour
         _thrusting = Input.GetKey(KeyCode.Tab);
 
         _descend = Input.GetKey(KeyCode.DownArrow);
-        _descend = Input.GetKey(KeyCode.S);
 
     }
 
