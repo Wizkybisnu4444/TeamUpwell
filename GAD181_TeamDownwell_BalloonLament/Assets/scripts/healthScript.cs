@@ -105,7 +105,7 @@ public class healthScript : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        if (collision.gameObject.name.Contains("BirdAnimObject01")||collision.gameObject.name.Contains("birdAnimObject_01 1"))
+        if (collision.gameObject.name.Contains("BirdAnimObject01")||collision.gameObject.name.Contains("birdAnimObject_01 1")||collision.gameObject.name.Contains("RedThunderCloud"))
         {
             --healthN;
             if (healthN == 2)
