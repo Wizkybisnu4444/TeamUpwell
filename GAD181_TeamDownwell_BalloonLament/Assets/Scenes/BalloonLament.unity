@@ -2551,6 +2551,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 777f0f79a997b0942866bfaa8900f174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _rb: {fileID: 1100376623}
+  _turnDirection: 1500
+  thrustSpeed: 75
 --- !u!114 &1100376620
 MonoBehaviour:
   m_ObjectHideFlags: 0

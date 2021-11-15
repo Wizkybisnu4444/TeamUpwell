@@ -25,9 +25,9 @@ public class playerMove : MonoBehaviour
             ApplyInput();
         }
 
-        _thrusting = Input.GetKey(KeyCode.Tab);
+        _thrusting = Input.GetKey(KeyCode.W);
 
-        _descend = Input.GetKey(KeyCode.DownArrow);
+        _descend = Input.GetKey(KeyCode.S);
 
     }
 
@@ -41,7 +41,7 @@ public class playerMove : MonoBehaviour
 
         if (_descend)
         {
-            _rb.AddForce(this.transform.up * -10);
+            _rb.AddForce(this.transform.up * -50);
         }
 
     }
