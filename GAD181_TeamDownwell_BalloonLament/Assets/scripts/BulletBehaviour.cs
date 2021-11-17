@@ -19,7 +19,7 @@ public class BulletBehaviour : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             GameObject ammo = Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
-            ammo.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.up*5);
+            ammo.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.up*50000);
 
 
         }
