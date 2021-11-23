@@ -1,18 +1,20 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BGscrolling_script
     - BulletBehaviour
     - CloudBehaviour
     - EnemyBehaviour
     - FiveSeconds
+    - GhostBehaviour
     - ReloadScene
     - healthScript
     - playerMove
-    - playerMovement
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -44,7 +46,6 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
-    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -67,21 +68,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 70
-      Script: {instanceID: 0}
-    - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -92,39 +89,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1838}
     - Class: 114
-      Script: {instanceID: 2050}
+      Script: {instanceID: 2052}
     - Class: 114
-      Script: {instanceID: 2102}
+      Script: {instanceID: 2104}
     - Class: 114
-      Script: {instanceID: 2222}
+      Script: {instanceID: 2224}
     - Class: 114
-      Script: {instanceID: 2230}
+      Script: {instanceID: 2232}
     - Class: 114
-      Script: {instanceID: 2394}
+      Script: {instanceID: 2396}
     - Class: 114
-      Script: {instanceID: 2528}
+      Script: {instanceID: 2530}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2602}
     - Class: 114
-      Script: {instanceID: 2650}
+      Script: {instanceID: 2652}
     - Class: 114
-      Script: {instanceID: 2812}
+      Script: {instanceID: 2814}
     - Class: 114
-      Script: {instanceID: 3028}
+      Script: {instanceID: 3032}
     - Class: 114
-      Script: {instanceID: 3274}
+      Script: {instanceID: 3278}
     - Class: 114
-      Script: {instanceID: 3386}
+      Script: {instanceID: 3758}
     - Class: 114
-      Script: {instanceID: 3754}
+      Script: {instanceID: 3928}
     - Class: 114
-      Script: {instanceID: 4718}
+      Script: {instanceID: 4726}
     - Class: 114
-      Script: {instanceID: 5096}
+      Script: {instanceID: 5036}
     - Class: 114
-      Script: {instanceID: 5244}
+      Script: {instanceID: 5104}
     - Class: 114
-      Script: {instanceID: 5294}
+      Script: {instanceID: 5252}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -230,6 +227,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: fde0111ff441f13f0a9e0d24cf9a570c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BirdBehaviour
   - hash:
       serializedVersion: 2
       Hash: c7a1cfbcd815f35b6700d8538ef4094e
@@ -502,6 +505,12 @@ ScriptsOnlyBuild:
     className: BalloonForceMovement
   - hash:
       serializedVersion: 2
+      Hash: fde0111ff441f13f0a9e0d24cf9a570c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GhostBehaviour
+  - hash:
+      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -743,4 +752,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/BalloonLament.unity
-  playerPath: C:/Users/Geoffrey/Documents/Balloon Lament/Balloon Lament.exe
+  playerPath: H:/Balloon Lament/Balloon Lament.exe

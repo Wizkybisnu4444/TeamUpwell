@@ -8,7 +8,7 @@ public class ReloadScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(Restart());
     }
 
     // Update is called once per frame
@@ -18,6 +18,11 @@ public class ReloadScene : MonoBehaviour
     }
     public void OnClick()
     {
+        SceneManager.LoadScene("BalloonLament");
+    }
+    IEnumerator Restart()
+    {
+        yield return new WaitForSeconds(2.5f);
         SceneManager.LoadScene("BalloonLament");
     }
 }

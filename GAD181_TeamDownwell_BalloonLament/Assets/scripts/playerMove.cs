@@ -25,10 +25,9 @@ public class playerMove : MonoBehaviour
             ApplyInput();
         }
 
-        _thrusting = Input.GetKey(KeyCode.W);
+        _thrusting = Input.GetKey(KeyCode.W)||Input.GetKey(KeyCode.UpArrow);
 
-        _descend = Input.GetKey(KeyCode.DownArrow);
-        _descend = Input.GetKey(KeyCode.S);
+        _descend = Input.GetKey(KeyCode.DownArrow)||Input.GetKey(KeyCode.S);
 
     }
 
