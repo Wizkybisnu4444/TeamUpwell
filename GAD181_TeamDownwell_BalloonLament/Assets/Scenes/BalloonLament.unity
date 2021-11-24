@@ -15053,6 +15053,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2177485306004802578, guid: 10072e1b2a85b3449953f6c39579293c, type: 3}
+      propertyPath: health
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3515117570241635177, guid: 10072e1b2a85b3449953f6c39579293c, type: 3}
       propertyPath: m_Name
       value: GhostRed
