@@ -6,6 +6,8 @@ public class CloudBehaviour : MonoBehaviour
 {
     public int health = 2;
 
+    private ScoreKeeper myScore;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,11 @@ public class CloudBehaviour : MonoBehaviour
             if (health < 1)
             {
                 Destroy(gameObject);
+
+                myScore = GetComponent<ScoreKeeper>();
+
+                myScore.AddToScore;
+
             }
         }
     }

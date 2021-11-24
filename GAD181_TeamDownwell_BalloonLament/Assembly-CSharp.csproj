@@ -54,9 +54,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\scripts\BirdBehaviour.cs" />
-    <Compile Include="Assets\scripts\GhostHover.cs" />
     <Compile Include="Assets\scripts\CloudBehaviour.cs" />
     <Compile Include="Assets\scripts\ReloadScene.cs" />
+    <Compile Include="Assets\scripts\NextScene.cs" />
     <Compile Include="Assets\scripts\FiveSeconds.cs" />
     <Compile Include="Assets\scripts\BulletBehaviour.cs" />
     <Compile Include="Assets\scripts\EnemyBehaviour.cs" />
@@ -68,9 +68,9 @@
     <Compile Include="Assets\scripts\BGscrolling_script.cs" />
     <Compile Include="Assets\scripts\healthScript.cs" />
     <Compile Include="Assets\scripts\bulletScript.cs" />
-    <Compile Include="Assets\scripts\playerMovement.cs" />
-    <Compile Include="Assets\scripts\NextScene.cs" />
     <Compile Include="Assets\scripts\GameOverCountdown.cs" />
+    <Compile Include="Assets\scripts\playerMovement.cs" />
+    <Compile Include="Assets\scripts\ScoreKeeper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
