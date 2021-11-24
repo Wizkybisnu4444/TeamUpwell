@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyBehaviour : MonoBehaviour
 {
     GameObject player;
-    public int health;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +20,8 @@ public class EnemyBehaviour : MonoBehaviour
     {
         if (collision.gameObject.name.Contains("bullet01"))
         {
-            health--;
-            if(health<1)
-            { Destroy(gameObject); }
+            player.GetComponent<healthScript>().kills++;
+            Destroy(gameObject);
         }
     }
 }
