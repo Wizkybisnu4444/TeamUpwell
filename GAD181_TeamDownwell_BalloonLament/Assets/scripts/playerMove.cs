@@ -41,7 +41,7 @@ public class playerMove : MonoBehaviour
 
         if (_descend)
         {
-            _rb.AddForce(this.transform.up * -10);
+            _rb.AddForce(this.transform.up * -50);
         }
 
     }
