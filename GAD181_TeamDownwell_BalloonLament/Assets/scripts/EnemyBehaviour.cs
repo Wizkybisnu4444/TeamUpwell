@@ -4,24 +4,31 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    GameObject player;
+    public int health = 0;
+    public GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("/Canvas/PlayerSpriteGreen");
+        health = 2;
+        player = GameObject.Find("PlayerSpriteGreen");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    void OnCollisionEnter2D (Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name.Contains("bullet01"))
         {
-            player.GetComponent<healthScript>().kills++;
-            Destroy(gameObject);
+            --health;
+            if (health < 1)
+            {
+                player.GetComponent<healthScript>().ghosthit = true;
+                Destroy(gameObject);
+            }
         }
     }
 }

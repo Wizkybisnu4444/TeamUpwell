@@ -12,6 +12,14 @@ public class healthScript : MonoBehaviour
     public GameObject gameOver;
     public int kills = 0;
     public GameObject victory;
+    public bool booster = false;
+    public GameObject shield;
+    public bool cloudhit;
+    public bool thunderhit;
+    public bool ghosthit;
+    public AudioClip cloud;
+    public AudioClip thunder;
+    public AudioClip ghost;
     // Start is called before the first frame update
     void Start()
     {
@@ -74,6 +82,21 @@ public class healthScript : MonoBehaviour
         //        }
         //    }
         //}
+        if (cloudhit == true)
+        {
+            cloudhit = false;
+            GetComponent<AudioSource>().PlayOneShot(cloud);
+        }
+        if (thunderhit == true)
+        {
+            thunderhit = false;
+            GetComponent<AudioSource>().PlayOneShot(thunder);
+        }
+        if (ghosthit == true)
+        {
+            ghosthit = false;
+            GetComponent<AudioSource>().PlayOneShot(ghost);
+        }
         if (kills > 8)
         {
             victory.gameObject.SetActive(true);
@@ -83,62 +106,86 @@ public class healthScript : MonoBehaviour
     {
         if (collision.gameObject.name.Contains("whiteGhost"))
         {
-            --healthN;
-            if (healthN == 2)
+            if (booster == false)
             {
-                healthIII.gameObject.SetActive(false);
-                healthI.gameObject.SetActive(true);
-                healthII.gameObject.SetActive(true);
-            }
-            if (healthN == 1)
-            {
-                healthIII.gameObject.SetActive(false);
-                healthII.gameObject.SetActive(false);
-                healthI.gameObject.SetActive(true);
-            }
-            if (healthN == 0)
-            {
+                --healthN;
+                if (healthN == 2)
+                {
+                    healthIII.gameObject.SetActive(false);
+                    healthI.gameObject.SetActive(true);
+                    healthII.gameObject.SetActive(true);
+                }
+                if (healthN == 1)
+                {
+                    healthIII.gameObject.SetActive(false);
+                    healthII.gameObject.SetActive(false);
+                    healthI.gameObject.SetActive(true);
+                }
+                if (healthN == 0)
+                {
 
-                healthI.gameObject.SetActive(false);
-                healthII.gameObject.SetActive(false);
-                healthIII.gameObject.SetActive(false);
-                gameOver.gameObject.SetActive(true);
-                Destroy(gameObject);
+                    healthI.gameObject.SetActive(false);
+                    healthII.gameObject.SetActive(false);
+                    healthIII.gameObject.SetActive(false);
+                    gameOver.gameObject.SetActive(true);
+                    Destroy(gameObject);
+                }
+                booster = true;
+                shield.SetActive(true);
+                StartCoroutine(Booster());
             }
         }
         if (collision.gameObject.name.Contains("BirdAnimObject01")||collision.gameObject.name.Contains("birdAnimObject_01 1")||collision.gameObject.name.Contains("RedThunderCloud")||collision.gameObject.name.Contains("GhostRed"))
         {
-            --healthN;
-            if (healthN == 2)
+            if (booster == false)
             {
-                healthIII.gameObject.SetActive(false);
-                healthI.gameObject.SetActive(true);
-                healthII.gameObject.SetActive(true);
-            }
-            if (healthN == 1)
-            {
-                healthIII.gameObject.SetActive(false);
-                healthII.gameObject.SetActive(false);
-                healthI.gameObject.SetActive(true);
-            }
-            if (healthN == 0)
-            {
+                --healthN;
+                if (healthN == 2)
+                {
+                    healthIII.gameObject.SetActive(false);
+                    healthI.gameObject.SetActive(true);
+                    healthII.gameObject.SetActive(true);
+                }
+                if (healthN == 1)
+                {
+                    healthIII.gameObject.SetActive(false);
+                    healthII.gameObject.SetActive(false);
+                    healthI.gameObject.SetActive(true);
+                }
+                if (healthN == 0)
+                {
 
+                    healthI.gameObject.SetActive(false);
+                    healthII.gameObject.SetActive(false);
+                    healthIII.gameObject.SetActive(false);
+                    gameOver.gameObject.SetActive(true);
+                    Destroy(gameObject);
+                }
+                booster = true;
+                shield.SetActive(true);
+                StartCoroutine(Booster());
+            }
+        }
+        if (collision.gameObject.name.Contains("redGhost"))
+        {
+            if (booster == false)
+            {
+                healthN = 0;
                 healthI.gameObject.SetActive(false);
                 healthII.gameObject.SetActive(false);
                 healthIII.gameObject.SetActive(false);
                 gameOver.gameObject.SetActive(true);
                 Destroy(gameObject);
             }
+            booster = true;
+            shield.SetActive(true);
+            StartCoroutine(Booster());
         }
-        if (collision.gameObject.name.Contains("redGhost"))
+        IEnumerator Booster()
         {
-            healthN = 0;
-            healthI.gameObject.SetActive(false);
-            healthII.gameObject.SetActive(false);
-            healthIII.gameObject.SetActive(false);
-            gameOver.gameObject.SetActive(true);
-            Destroy(gameObject);
+            yield return new WaitForSeconds(2f);
+            shield.SetActive(false);
+            booster = false;
         }
         if (collision.gameObject.name.Contains("VictoryTrigger"))
         {
