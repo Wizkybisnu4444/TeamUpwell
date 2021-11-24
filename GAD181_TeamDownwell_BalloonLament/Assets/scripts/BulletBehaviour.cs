@@ -13,7 +13,7 @@ public class BulletBehaviour : MonoBehaviour
     public GameObject iv;
     public GameObject v;
     public GameObject max;
-    public AudioClip pew;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +34,6 @@ public class BulletBehaviour : MonoBehaviour
             if (Input.GetKeyDown("space"))
             {
                 bulletN--;
-                GetComponent<AudioSource>().PlayOneShot(pew);
                 GameObject ammo = Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
                 ammo.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.up * 50000);
                 if (bulletN == 4)
