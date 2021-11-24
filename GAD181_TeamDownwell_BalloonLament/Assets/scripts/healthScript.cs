@@ -20,6 +20,7 @@ public class healthScript : MonoBehaviour
     public AudioClip cloud;
     public AudioClip thunder;
     public AudioClip ghost;
+    public AudioClip hit;
     // Start is called before the first frame update
     void Start()
     {
@@ -108,6 +109,7 @@ public class healthScript : MonoBehaviour
         {
             if (booster == false)
             {
+                GetComponent<AudioSource>().PlayOneShot(hit);
                 --healthN;
                 if (healthN == 2)
                 {
@@ -128,6 +130,7 @@ public class healthScript : MonoBehaviour
                     healthII.gameObject.SetActive(false);
                     healthIII.gameObject.SetActive(false);
                     gameOver.gameObject.SetActive(true);
+                    SceneManager.LoadScene("GameOverScreen");
                     Destroy(gameObject);
                 }
                 booster = true;
@@ -139,6 +142,7 @@ public class healthScript : MonoBehaviour
         {
             if (booster == false)
             {
+                GetComponent<AudioSource>().PlayOneShot(hit);
                 --healthN;
                 if (healthN == 2)
                 {
@@ -159,6 +163,7 @@ public class healthScript : MonoBehaviour
                     healthII.gameObject.SetActive(false);
                     healthIII.gameObject.SetActive(false);
                     gameOver.gameObject.SetActive(true);
+                    SceneManager.LoadScene("GameOverScreen");
                     Destroy(gameObject);
                 }
                 booster = true;
@@ -170,11 +175,12 @@ public class healthScript : MonoBehaviour
         {
             if (booster == false)
             {
+                GetComponent<AudioSource>().PlayOneShot(hit);
                 healthN = 0;
                 healthI.gameObject.SetActive(false);
                 healthII.gameObject.SetActive(false);
                 healthIII.gameObject.SetActive(false);
-                gameOver.gameObject.SetActive(true);
+                SceneManager.LoadScene("GameOverScreen");
                 Destroy(gameObject);
             }
             booster = true;
@@ -189,12 +195,7 @@ public class healthScript : MonoBehaviour
         }
         if (collision.gameObject.name.Contains("VictoryTrigger"))
         {
-            Destroy(collision.gameObject);
-            victory.gameObject.SetActive(true);
-        }
-        if (collision.gameObject.name.Contains("ReloadTrigger"))
-        {
-            SceneManager.LoadScene("BalloonLament");
+            SceneManager.LoadScene("WinLevelScreen");
         }
     }
 }

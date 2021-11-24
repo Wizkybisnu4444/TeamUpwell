@@ -6,20 +6,28 @@ using UnityEngine.SceneManagement;
 
 public class NextScene : MonoBehaviour
 {
-    
+    bool next = false;
+    public GameObject text;
+    public GameObject button;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        text.SetActive(false);
+        button.SetActive(false);
+        next = true;
+        StartCoroutine(Next());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (next == true)
         {
-            LoadNextScene();
+            if (Input.GetKey(KeyCode.Space))
+            {
+                LoadNextScene();
+            }
         }
     }
 
@@ -28,4 +36,11 @@ public class NextScene : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }  
 
+    IEnumerator Next()
+    {
+        yield return new WaitForSeconds(7.5f);
+        text.SetActive(true);
+        button.SetActive(true);
+        next = true;
+    }
 }

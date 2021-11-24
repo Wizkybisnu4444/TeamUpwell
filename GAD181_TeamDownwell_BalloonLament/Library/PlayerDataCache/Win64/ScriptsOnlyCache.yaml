@@ -4,11 +4,13 @@ ScriptsOnlyBuild:
     - BGscrolling_script
     - BulletBehaviour
     - CloudBehaviour
+    - EndProgression
     - EnemyBehaviour
     - FiveSeconds
     - GhostBehaviour
     - NextScene
     - ReloadScene
+    - StartProgression
     - ThunderBehaviour
     - healthScript
     - playerMove
@@ -16,7 +18,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -94,27 +95,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2234}
     - Class: 114
-      Script: {instanceID: 2398}
+      Script: {instanceID: 2400}
     - Class: 114
-      Script: {instanceID: 2532}
+      Script: {instanceID: 2534}
     - Class: 114
-      Script: {instanceID: 2604}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 2654}
+      Script: {instanceID: 2656}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 3034}
+      Script: {instanceID: 3038}
     - Class: 114
-      Script: {instanceID: 3280}
+      Script: {instanceID: 3284}
     - Class: 114
-      Script: {instanceID: 3760}
+      Script: {instanceID: 3764}
     - Class: 114
-      Script: {instanceID: 3930}
+      Script: {instanceID: 3934}
     - Class: 114
-      Script: {instanceID: 5038}
+      Script: {instanceID: 5042}
     - Class: 114
-      Script: {instanceID: 5254}
+      Script: {instanceID: 5258}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -152,6 +153,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -163,19 +168,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2234}
     - Class: 114
-      Script: {instanceID: 2654}
+      Script: {instanceID: 2656}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 3034}
+      Script: {instanceID: 3038}
     - Class: 114
-      Script: {instanceID: 3280}
+      Script: {instanceID: 3284}
     - Class: 114
-      Script: {instanceID: 3392}
+      Script: {instanceID: 3396}
     - Class: 114
-      Script: {instanceID: 17174}
+      Script: {instanceID: 23478}
     - Class: 114
-      Script: {instanceID: 28802}
+      Script: {instanceID: 23622}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -211,6 +216,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -222,13 +231,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2234}
     - Class: 114
-      Script: {instanceID: 2654}
+      Script: {instanceID: 2392}
     - Class: 114
-      Script: {instanceID: 3034}
+      Script: {instanceID: 2656}
     - Class: 114
-      Script: {instanceID: 3392}
+      Script: {instanceID: 3038}
     - Class: 114
-      Script: {instanceID: 17174}
+      Script: {instanceID: 3396}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -266,6 +275,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -281,21 +294,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2234}
     - Class: 114
-      Script: {instanceID: 2654}
+      Script: {instanceID: 2656}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 3034}
+      Script: {instanceID: 2880}
     - Class: 114
-      Script: {instanceID: 3280}
+      Script: {instanceID: 3038}
     - Class: 114
-      Script: {instanceID: 3392}
+      Script: {instanceID: 3284}
     - Class: 114
-      Script: {instanceID: 4728}
+      Script: {instanceID: 3396}
     - Class: 114
-      Script: {instanceID: 5106}
+      Script: {instanceID: 4732}
     - Class: 114
-      Script: {instanceID: 17174}
+      Script: {instanceID: 5110}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -331,6 +344,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -342,17 +359,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2234}
     - Class: 114
-      Script: {instanceID: 2654}
+      Script: {instanceID: 2656}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 3034}
+      Script: {instanceID: 3038}
     - Class: 114
-      Script: {instanceID: 3280}
+      Script: {instanceID: 3284}
     - Class: 114
-      Script: {instanceID: 3392}
+      Script: {instanceID: 3396}
     - Class: 114
-      Script: {instanceID: 17174}
+      Script: {instanceID: 23622}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -512,6 +529,12 @@ ScriptsOnlyBuild:
     className: CinemachinePixelPerfect
   - hash:
       serializedVersion: 2
+      Hash: eb13e514ffd9074d6b063ff43889f409
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NextScene
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -588,6 +611,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StartProgression
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -932,7 +961,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: faa612d653741546d58c2cdcb4653d97
+      Hash: 85490182787d12e64094ae552b5b45cb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: healthScript
@@ -989,7 +1018,7 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: NextScene
+    className: EndProgression
   platform: 19
   scenePathNames:
   - Assets/Scenes/TitleScreen.unity
@@ -997,5 +1026,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/BalloonLament.unity
   - Assets/Scenes/WinLevelScreen.unity
   - Assets/Scenes/GameOverScreen.unity
-  playerPath: C:/Users/Wayne/Desktop/GAD181/TeamUpwell/GAD181_TeamDownwell_BalloonLament/Nov25Build/Balloon
-    Lament.exe
+  playerPath: C:/Users/Fortech - James/Downloads/Balloon Lament/Balloon Lament.exe
