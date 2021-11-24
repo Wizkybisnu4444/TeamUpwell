@@ -14,6 +14,12 @@ public class healthScript : MonoBehaviour
     public GameObject victory;
     public bool booster = false;
     public GameObject shield;
+    public bool cloudhit;
+    public bool thunderhit;
+    public bool ghosthit;
+    public AudioClip cloud;
+    public AudioClip thunder;
+    public AudioClip ghost;
     // Start is called before the first frame update
     void Start()
     {
@@ -76,6 +82,21 @@ public class healthScript : MonoBehaviour
         //        }
         //    }
         //}
+        if (cloudhit == true)
+        {
+            cloudhit = false;
+            GetComponent<AudioSource>().PlayOneShot(cloud);
+        }
+        if (thunderhit == true)
+        {
+            thunderhit = false;
+            GetComponent<AudioSource>().PlayOneShot(thunder);
+        }
+        if (ghosthit == true)
+        {
+            ghosthit = false;
+            GetComponent<AudioSource>().PlayOneShot(ghost);
+        }
         if (kills > 8)
         {
             victory.gameObject.SetActive(true);

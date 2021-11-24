@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7538700756516015450}
   - component: {fileID: 6788599402232299502}
   - component: {fileID: -6805223239872635183}
-  - component: {fileID: -4128499316576326596}
+  - component: {fileID: 6094279981931708493}
   m_Layer: 5
   m_Name: RedThunderCloud
   m_TagString: Untagged
@@ -125,7 +125,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &-4128499316576326596
+--- !u!114 &6094279981931708493
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,7 +134,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 8599925279625352002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e36c30cef94284b9c83cb32e2b55ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 83ccca003874e3e4dab851ee2563f28e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 0
+  player: {fileID: 0}

@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class CloudBehaviour : MonoBehaviour
 {
-    public int health = 2;
+    public int health = 0;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        health = 1;
+        player = GameObject.Find("PlayerSpriteGreen");
     }
 
     // Update is called once per frame
@@ -24,6 +26,7 @@ public class CloudBehaviour : MonoBehaviour
             --health;
             if (health < 1)
             {
+                player.GetComponent<healthScript>().cloudhit = true;
                 Destroy(gameObject);
             }
         }

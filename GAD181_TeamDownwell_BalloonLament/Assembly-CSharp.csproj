@@ -68,6 +68,7 @@
     <Compile Include="Assets\scripts\healthScript.cs" />
     <Compile Include="Assets\scripts\bulletScript.cs" />
     <Compile Include="Assets\scripts\playerMovement.cs" />
+    <Compile Include="Assets\scripts\ThunderBehaviour.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
