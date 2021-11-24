@@ -8,6 +8,7 @@ public class BulletBehaviour : MonoBehaviour
     public int bulletN = 0;
     public bool reload = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
     public GameObject i;
     public GameObject ii;
     public GameObject iii;
@@ -16,6 +17,8 @@ public class BulletBehaviour : MonoBehaviour
     public GameObject max;
     public AudioClip pew;
 =======
+=======
+>>>>>>> parent of 63e033ce (stuff clashing, trying to fix)
 
 >>>>>>> parent of 63e033ce (stuff clashing, trying to fix)
     // Start is called before the first frame update
