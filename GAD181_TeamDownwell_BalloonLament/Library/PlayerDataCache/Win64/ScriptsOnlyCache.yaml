@@ -86,9 +86,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1478}
     - Class: 114
-      Script: {instanceID: 1568}
+      Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 1840}
+      Script: {instanceID: 1838}
+    - Class: 114
+      Script: {instanceID: 1876}
     - Class: 114
       Script: {instanceID: 2054}
     - Class: 114
@@ -123,8 +125,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5106}
     - Class: 114
       Script: {instanceID: 5254}
-    - Class: 114
-      Script: {instanceID: 50294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -236,6 +236,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BirdBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: aa03449312dcb44d32629d5a50c2010b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ThunderBehaviour
   - hash:
       serializedVersion: 2
       Hash: aa03449312dcb44d32629d5a50c2010b
@@ -752,12 +758,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: aa03449312dcb44d32629d5a50c2010b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ThunderBehaviour
   platform: 19
   scenePathNames:
   - Assets/Scenes/BalloonLament.unity
