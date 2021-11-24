@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 9184480941918995425}
   - component: {fileID: 4369576875919340858}
   - component: {fileID: -2540184010902087036}
-  - component: {fileID: 2977370343898216327}
   - component: {fileID: 2177485306004802578}
+  - component: {fileID: 7154594347361456178}
   m_Layer: 5
   m_Name: GhostRed
   m_TagString: Untagged
@@ -31,7 +31,7 @@ RectTransform:
   m_GameObject: {fileID: 3515117570241635177}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -116,22 +116,6 @@ MonoBehaviour:
   moveRight: 0
   facingRight: 0
   speed: 30
---- !u!58 &2977370343898216327
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3515117570241635177}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 15
 --- !u!114 &2177485306004802578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,3 +130,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   player: {fileID: 0}
+--- !u!70 &7154594347361456178
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3515117570241635177}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 1}
+  m_Size: {x: 30, y: 23}
+  m_Direction: 1
