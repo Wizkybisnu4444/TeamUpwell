@@ -961,6 +961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 1947712304}
   button: {fileID: 1080318025}
+  buttontext: {fileID: 1947712307}
 --- !u!1 &790523093
 GameObject:
   m_ObjectHideFlags: 0
@@ -1769,7 +1770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1947712305
 RectTransform:
   m_ObjectHideFlags: 0
