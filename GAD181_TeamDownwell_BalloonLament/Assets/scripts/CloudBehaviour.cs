@@ -7,7 +7,7 @@ public class CloudBehaviour : MonoBehaviour
     public int health = 0;
     public GameObject player;
 
-    private ScoreKeeper myScore;
+    //private ScoreKeeper myScore;
 
     // Start is called before the first frame update
     void Start()
@@ -30,11 +30,8 @@ public class CloudBehaviour : MonoBehaviour
             {
                 player.GetComponent<healthScript>().cloudhit = true;
                 Destroy(gameObject);
-
-                myScore = GetComponent<ScoreKeeper>();
-
-                myScore.AddToScore;
-
+                //myScore = GetComponent<ScoreKeeper>();
+                //myScore.AddToScore;
             }
         }
     }
