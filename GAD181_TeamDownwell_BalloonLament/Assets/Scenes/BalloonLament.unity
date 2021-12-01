@@ -14057,6 +14057,27 @@ MonoBehaviour:
   thunder: {fileID: 8300000, guid: 8ef213f85b3d77844b10405e5fb41432, type: 3}
   ghost: {fileID: 8300000, guid: 65166a24a54f2214593bcc940340ba77, type: 3}
   hit: {fileID: 8300000, guid: 25d89dd1315efba468a4e2a875514d63, type: 3}
+--- !u!114 &1100376627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100376617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5761d37554eef8740907870591362ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  cloud: 0
+  ghost: 0
+  thunder: 0
+  ccombo: 0
+  gcombo: 0
+  tcombo: 0
+  comboend: 0
+  scoretext: {fileID: 1053488530}
 --- !u!1001 &1100836054
 PrefabInstance:
   m_ObjectHideFlags: 0

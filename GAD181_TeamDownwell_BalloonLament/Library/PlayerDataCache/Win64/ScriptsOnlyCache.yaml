@@ -7,9 +7,11 @@ ScriptsOnlyBuild:
     - EndProgression
     - EnemyBehaviour
     - FiveSeconds
+    - GameOverCountdown
     - GhostBehaviour
     - NextScene
     - ReloadScene
+    - ScoreKeeper
     - StartProgression
     - ThunderBehaviour
     - healthScript
@@ -86,37 +88,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1478}
     - Class: 114
-      Script: {instanceID: 1580}
+      Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 1890}
+      Script: {instanceID: 1876}
     - Class: 114
-      Script: {instanceID: 2068}
+      Script: {instanceID: 1972}
     - Class: 114
-      Script: {instanceID: 2122}
+      Script: {instanceID: 2056}
     - Class: 114
-      Script: {instanceID: 2250}
+      Script: {instanceID: 2110}
     - Class: 114
-      Script: {instanceID: 2416}
+      Script: {instanceID: 2238}
     - Class: 114
-      Script: {instanceID: 2550}
+      Script: {instanceID: 2404}
     - Class: 114
-      Script: {instanceID: 2622}
+      Script: {instanceID: 2538}
     - Class: 114
-      Script: {instanceID: 2672}
+      Script: {instanceID: 2610}
     - Class: 114
-      Script: {instanceID: 2834}
+      Script: {instanceID: 2660}
     - Class: 114
-      Script: {instanceID: 3054}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 3300}
+      Script: {instanceID: 3042}
     - Class: 114
-      Script: {instanceID: 3780}
+      Script: {instanceID: 3288}
     - Class: 114
-      Script: {instanceID: 3950}
+      Script: {instanceID: 3768}
     - Class: 114
-      Script: {instanceID: 5058}
+      Script: {instanceID: 3938}
     - Class: 114
-      Script: {instanceID: 5274}
+      Script: {instanceID: 5046}
+    - Class: 114
+      Script: {instanceID: 5262}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -167,21 +171,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1478}
     - Class: 114
-      Script: {instanceID: 2056}
+      Script: {instanceID: 2044}
     - Class: 114
-      Script: {instanceID: 2250}
+      Script: {instanceID: 2238}
     - Class: 114
-      Script: {instanceID: 2672}
+      Script: {instanceID: 2660}
     - Class: 114
-      Script: {instanceID: 2834}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 3054}
+      Script: {instanceID: 3042}
     - Class: 114
-      Script: {instanceID: 3300}
+      Script: {instanceID: 3288}
     - Class: 114
-      Script: {instanceID: 3412}
+      Script: {instanceID: 3400}
     - Class: 114
-      Script: {instanceID: 43098}
+      Script: {instanceID: 5292}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -230,15 +234,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1478}
     - Class: 114
-      Script: {instanceID: 2250}
+      Script: {instanceID: 2238}
     - Class: 114
-      Script: {instanceID: 2408}
+      Script: {instanceID: 2396}
     - Class: 114
-      Script: {instanceID: 2672}
+      Script: {instanceID: 2660}
     - Class: 114
-      Script: {instanceID: 3054}
+      Script: {instanceID: 3042}
     - Class: 114
-      Script: {instanceID: 3412}
+      Script: {instanceID: 3400}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -289,27 +293,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1478}
     - Class: 114
-      Script: {instanceID: 1852}
+      Script: {instanceID: 1838}
     - Class: 114
-      Script: {instanceID: 2242}
+      Script: {instanceID: 2230}
     - Class: 114
-      Script: {instanceID: 2250}
+      Script: {instanceID: 2238}
     - Class: 114
-      Script: {instanceID: 2672}
+      Script: {instanceID: 2660}
     - Class: 114
-      Script: {instanceID: 2834}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 2896}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 3054}
+      Script: {instanceID: 3042}
     - Class: 114
-      Script: {instanceID: 3300}
+      Script: {instanceID: 3288}
     - Class: 114
-      Script: {instanceID: 3412}
+      Script: {instanceID: 3400}
     - Class: 114
-      Script: {instanceID: 4748}
+      Script: {instanceID: 4736}
     - Class: 114
-      Script: {instanceID: 5126}
+      Script: {instanceID: 5114}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -358,19 +362,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1478}
     - Class: 114
-      Script: {instanceID: 2056}
+      Script: {instanceID: 2044}
     - Class: 114
-      Script: {instanceID: 2250}
+      Script: {instanceID: 2238}
     - Class: 114
-      Script: {instanceID: 2672}
+      Script: {instanceID: 2660}
     - Class: 114
-      Script: {instanceID: 2834}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 3054}
+      Script: {instanceID: 3042}
     - Class: 114
-      Script: {instanceID: 3300}
+      Script: {instanceID: 3288}
     - Class: 114
-      Script: {instanceID: 3412}
+      Script: {instanceID: 3400}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -486,6 +490,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ThunderBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: dddbc35dfbdbecdaf5ac16f2783b6282
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScoreKeeper
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -980,6 +990,12 @@ ScriptsOnlyBuild:
     className: bulletScript
   - hash:
       serializedVersion: 2
+      Hash: 76c397ba3af8d53a3a63bb42471b8650
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameOverCountdown
+  - hash:
+      serializedVersion: 2
       Hash: d8f94044afbde50af72c986848e54d50
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1025,6 +1041,6 @@ ScriptsOnlyBuild:
   - Assets/Scenes/TitleScreen.unity
   - Assets/Scenes/HowToPlayScene.unity
   - Assets/Scenes/BalloonLament.unity
-  - Assets/Scenes/WinLevelScreen.unity
   - Assets/Scenes/GameOverScreen.unity
-  playerPath: H:/Balloon Lament/Balloon Lament.exe
+  - Assets/Scenes/WinLevelScreen.unity
+  playerPath: C:/Users/Fortech - James/Downloads/Balloon Lament/Balloon Lament.exe

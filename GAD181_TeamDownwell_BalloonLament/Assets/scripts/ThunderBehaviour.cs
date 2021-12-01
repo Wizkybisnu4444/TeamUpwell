@@ -27,6 +27,7 @@ public class ThunderBehaviour : MonoBehaviour
             if (health < 1)
             {
                 player.GetComponent<healthScript>().thunderhit = true;
+                player.GetComponent<ScoreKeeper>().thunder = true;
                 Destroy(gameObject);
             }
         }

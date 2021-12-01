@@ -110,6 +110,7 @@ public class healthScript : MonoBehaviour
             if (booster == false)
             {
                 GetComponent<AudioSource>().PlayOneShot(hit);
+                this.GetComponent<ScoreKeeper>().comboend = true;
                 --healthN;
                 if (healthN == 2)
                 {
@@ -143,6 +144,7 @@ public class healthScript : MonoBehaviour
             if (booster == false)
             {
                 GetComponent<AudioSource>().PlayOneShot(hit);
+                this.GetComponent<ScoreKeeper>().comboend = true;
                 --healthN;
                 if (healthN == 2)
                 {
@@ -176,6 +178,7 @@ public class healthScript : MonoBehaviour
             if (booster == false)
             {
                 GetComponent<AudioSource>().PlayOneShot(hit);
+                this.GetComponent<ScoreKeeper>().comboend = true;
                 healthN = 0;
                 healthI.gameObject.SetActive(false);
                 healthII.gameObject.SetActive(false);

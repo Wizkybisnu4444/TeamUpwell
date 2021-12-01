@@ -27,6 +27,7 @@ public class EnemyBehaviour : MonoBehaviour
             if (health < 1)
             {
                 player.GetComponent<healthScript>().ghosthit = true;
+                player.GetComponent<ScoreKeeper>().ghost = true;
                 Destroy(gameObject);
             }
         }

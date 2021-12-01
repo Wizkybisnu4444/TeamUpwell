@@ -92,6 +92,7 @@ public class BulletBehaviour : MonoBehaviour
     }
     IEnumerator Reload()
     {
+        this.GetComponent<ScoreKeeper>().reload = true;
         yield return new WaitForSeconds(1f);
         bulletN = 5;
         bulletN = 5;

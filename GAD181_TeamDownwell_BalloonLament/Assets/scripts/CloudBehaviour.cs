@@ -29,6 +29,7 @@ public class CloudBehaviour : MonoBehaviour
             if (health < 1)
             {
                 player.GetComponent<healthScript>().cloudhit = true;
+                player.GetComponent<ScoreKeeper>().cloud = true;
                 Destroy(gameObject);
                 //myScore = GetComponent<ScoreKeeper>();
                 //myScore.AddToScore;
