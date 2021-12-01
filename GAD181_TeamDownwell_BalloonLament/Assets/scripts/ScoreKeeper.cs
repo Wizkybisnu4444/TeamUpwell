@@ -18,9 +18,21 @@ public class ScoreKeeper : MonoBehaviour
     public bool ccombo = false;
     public bool gcombo = false;
     public bool tcombo = false;
+    public int ccount = 0;
+    public int gcount = 0;
+    public int tcount = 0;
     public bool comboend = false;
     public bool reload = false;
     public Text scoretext;
+    public Text cnumber;
+    public Text gnumber;
+    public Text tnumber;
+    public GameObject cobject;
+    public GameObject gobject;
+    public GameObject tobject;
+    public GameObject ctext;
+    public GameObject gtext;
+    public GameObject ttext;
 
 
     // Start is called before the first frame update
@@ -59,6 +71,11 @@ public class ScoreKeeper : MonoBehaviour
                 {
                     scoretext.text = score.ToString();
                 }
+                ccount++;
+                cnumber.text = "x" + ccount.ToString();
+                cobject.SetActive(true);
+                cnumber.gameObject.SetActive(true);
+                ctext.SetActive(true);
             }
             else
             {
@@ -112,6 +129,11 @@ public class ScoreKeeper : MonoBehaviour
                 {
                     scoretext.text = score.ToString();
                 }
+                gcount++;
+                gnumber.text = "x" + gcount.ToString();
+                gobject.SetActive(true);
+                gnumber.gameObject.SetActive(true);
+                gtext.SetActive(true);
             }
             else
             {
@@ -165,6 +187,11 @@ public class ScoreKeeper : MonoBehaviour
                 {
                     scoretext.text = score.ToString();
                 }
+                tcount++;
+                tnumber.text = "x" + tcount.ToString();
+                tobject.SetActive(true);
+                tnumber.gameObject.SetActive(true);
+                ttext.SetActive(true);
             }
             else
             {
@@ -199,6 +226,10 @@ public class ScoreKeeper : MonoBehaviour
             gcombo = false;
             tcombo = false;
         }
+        if (reload == true)
+        {
+            StartCoroutine(ReloadCombo());
+        }
     }
 
     //public void AddToScore()
@@ -217,6 +248,10 @@ public class ScoreKeeper : MonoBehaviour
         {
             yield return new WaitForSeconds(2f);
             ccombo = false;
+            cnumber.gameObject.SetActive(false);
+            ccount = 0;
+            cobject.SetActive(false);
+            ctext.SetActive(false);
         }
     }
     IEnumerator GhostCombo()
@@ -231,6 +266,10 @@ public class ScoreKeeper : MonoBehaviour
         {
             yield return new WaitForSeconds(4f);
             gcombo = false;
+            gnumber.gameObject.SetActive(false);
+            gcount = 0;
+            gobject.SetActive(false);
+            gtext.SetActive(false);
         }
     }
     IEnumerator ThunderCombo()
@@ -245,6 +284,15 @@ public class ScoreKeeper : MonoBehaviour
         {
             yield return new WaitForSeconds(6f);
             tcombo = false;
+            tnumber.gameObject.SetActive(false);
+            tcount = 0;
+            tobject.SetActive(false);
+            ttext.SetActive(false);
         }
+    }
+    IEnumerator ReloadCombo()
+    {
+        yield return new WaitForSeconds(2f);
+        reload = false;
     }
 }
