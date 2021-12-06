@@ -22,10 +22,6 @@ public class BGscrolling_script : MonoBehaviour
     {
         
         transform.Translate(Vector3.down*speed*Time.deltaTime);
-        if (transform.position.y < -539.4224f)
-        {
-            transform.position = StartPosition;
-        }
 
     }
 }
