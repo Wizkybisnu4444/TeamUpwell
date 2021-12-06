@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/BalloonLament.unity
-=======
-- path: Assets/Scenes/HighScoreTable.unity
->>>>>>> HighScoreTable
+- path: Assets/Scenes/TitleScreen.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
