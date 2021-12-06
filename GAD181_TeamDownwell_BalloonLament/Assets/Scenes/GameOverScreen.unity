@@ -1337,7 +1337,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9606041d496d54b4aa2a49c5e289fd88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countDisplay: {fileID: 1957654113}
+  timeRemaining: 10
+  timerIsRunning: 1
+  timeText: {fileID: 1957654113}
 --- !u!1 &1630559217
 GameObject:
   m_ObjectHideFlags: 0
