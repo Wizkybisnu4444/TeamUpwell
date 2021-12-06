@@ -19,7 +19,11 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
+<<<<<<< HEAD
   m_Title: Scene
+=======
+  m_Title: Project
+>>>>>>> HighScoreTable
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -42,7 +46,11 @@ MonoBehaviour:
     x: 935
     y: 0
     width: 601
+<<<<<<< HEAD
     height: 664
+=======
+    height: 677
+>>>>>>> HighScoreTable
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
@@ -74,7 +82,11 @@ MonoBehaviour:
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 123
+=======
+  controlID: 60
+>>>>>>> HighScoreTable
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -119,7 +131,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 280
+<<<<<<< HEAD
     height: 664
+=======
+    height: 677
+>>>>>>> HighScoreTable
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
@@ -154,7 +170,7 @@ MonoBehaviour:
   - {fileID: 15}
   - {fileID: 20}
   m_Selected: 1
-  m_LastSelected: 2
+  m_LastSelected: 0
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -253,7 +269,11 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 59
+=======
+  controlID: 110
+>>>>>>> HighScoreTable
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -279,7 +299,11 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 60
+=======
+  controlID: 111
+>>>>>>> HighScoreTable
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -298,7 +322,11 @@ MonoBehaviour:
     x: 280
     y: 0
     width: 655
+<<<<<<< HEAD
     height: 664
+=======
+    height: 677
+>>>>>>> HighScoreTable
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
@@ -336,6 +364,7 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: -98584395834970777, guid: e166da20d3aca384696ab48bead6abf8, type: 2}
     - {fileID: -5571698796255967974, guid: 1ab8c4a0b3bb6554588ea317a43f121d, type: 2}
+    - {fileID: -1040435798647109542, guid: 4e768d5fdc49f4b4dbdf8c54ac83c25e, type: 2}
     m_ValueSerializationHelper:
     - e00: 0.9642105
       e01: 0
@@ -369,10 +398,26 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 1ab8c4a0b3bb6554588ea317a43f121d, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 4e768d5fdc49f4b4dbdf8c54ac83c25e, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -5571698796255967974, guid: 1ab8c4a0b3bb6554588ea317a43f121d, type: 2}
+  - m_Target: {fileID: -1040435798647109542, guid: 4e768d5fdc49f4b4dbdf8c54ac83c25e, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -412,7 +457,11 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
+<<<<<<< HEAD
   m_LastSelectedObjectID: -4850
+=======
+  m_LastSelectedObjectID: -10316
+>>>>>>> HighScoreTable
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -451,22 +500,37 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Prefabs
+=======
+    - Assets/scripts
+>>>>>>> HighScoreTable
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Prefabs
+=======
+  - Assets/scripts
+>>>>>>> HighScoreTable
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Mitch\Documents\GitHub\TeamUpwell\GAD181_TeamDownwell_BalloonLament
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 26}
     m_SelectedIDs: 624a0000
     m_LastClickedID: 19042
     m_ExpandedIDs: 00000000564a000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 21}
+    m_SelectedIDs: 5c430000
+    m_LastClickedID: 17244
+    m_ExpandedIDs: 000000005043000000ca9a3b
+>>>>>>> HighScoreTable
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -494,7 +558,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000564a0000
+=======
+    m_ExpandedIDs: 0000000050430000
+>>>>>>> HighScoreTable
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -614,10 +682,17 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< HEAD
       scrollPos: {x: 0, y: 82}
       m_SelectedIDs: 10d5ffff
       m_LastClickedID: -10992
       m_ExpandedIDs: 3afbffff6042000078430000524500005845000086450000f04500003c480000a2480000
+=======
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: b8130000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 2ec2fffff2c3ffff0ac7ffff90c7ffffbad7ffffbed7ffffc6d7ffffd2d7fffff2d7ffffd8e0ffff24edffff56edffff68edffffc2eeffff40faffff54faffff3afbffff044a0000284a0000ee4a0000
+>>>>>>> HighScoreTable
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -677,9 +752,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 264.31628, y: 944.86725, z: -781.2643}
     speed: 2
     m_Value: {x: 264.31628, y: 944.86725, z: -781.2643}
+=======
+    m_Target: {x: 197.58275, y: 175.28539, z: -21.381943}
+    speed: 2
+    m_Value: {x: 197.58275, y: 175.28539, z: -21.381943}
+>>>>>>> HighScoreTable
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -730,9 +811,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 387.27823
     speed: 2
     m_Value: 387.27823
+=======
+    m_Target: 263.1659
+    speed: 2
+    m_Value: 263.1659
+>>>>>>> HighScoreTable
   m_Ortho:
     m_Target: 1
     speed: 2
