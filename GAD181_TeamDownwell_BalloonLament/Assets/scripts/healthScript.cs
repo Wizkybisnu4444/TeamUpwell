@@ -190,15 +190,38 @@ public class healthScript : MonoBehaviour
             shield.SetActive(true);
             StartCoroutine(Booster());
         }
-        IEnumerator Booster()
-        {
-            yield return new WaitForSeconds(2f);
-            shield.SetActive(false);
-            booster = false;
-        }
         if (collision.gameObject.name.Contains("VictoryTrigger"))
         {
             SceneManager.LoadScene("WinLevelScreen");
         }
+        if (collision.gameObject.name.Contains("HealthBottle"))
+        {
+            Destroy(collision.gameObject);
+            healthN = 3;
+            healthI.gameObject.SetActive(true);
+            healthII.gameObject.SetActive(true);
+            healthIII.gameObject.SetActive(true);
+        }
+        if (collision.gameObject.name.Contains("TripleShot"))
+        {
+            Destroy(collision.gameObject);
+            this.GetComponent<BulletBehaviour>().triple = true;
+        }
+        if (collision.gameObject.name.Contains("YouShallNotPass"))
+        {
+            this.GetComponent<ScoreKeeper>().comboend = true;
+            healthN = 0;
+            healthI.gameObject.SetActive(false);
+            healthII.gameObject.SetActive(false);
+            healthIII.gameObject.SetActive(false);
+            SceneManager.LoadScene("GameOverScreen");
+            Destroy(gameObject);
+        }
+    }
+    IEnumerator Booster()
+    {
+        yield return new WaitForSeconds(2f);
+        shield.SetActive(false);
+        booster = false;
     }
 }

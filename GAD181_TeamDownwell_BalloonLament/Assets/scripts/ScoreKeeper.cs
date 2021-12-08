@@ -241,12 +241,12 @@ public class ScoreKeeper : MonoBehaviour
         ccombo = true;
         if (reload == true)
         {
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(4f);
             StartCoroutine(CloudCombo());
         }
         else
         {
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(4f);
             ccombo = false;
             cnumber.gameObject.SetActive(false);
             ccount = 0;
@@ -259,12 +259,12 @@ public class ScoreKeeper : MonoBehaviour
         gcombo = true;
         if (reload == true)
         {
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(4f);
             StartCoroutine(GhostCombo());
         }
         else
         {
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(8f);
             gcombo = false;
             gnumber.gameObject.SetActive(false);
             gcount = 0;
@@ -277,12 +277,12 @@ public class ScoreKeeper : MonoBehaviour
         tcombo = true;
         if (reload == true)
         {
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(4f);
             StartCoroutine(ThunderCombo());
         }
         else
         {
-            yield return new WaitForSeconds(6f);
+            yield return new WaitForSeconds(12f);
             tcombo = false;
             tnumber.gameObject.SetActive(false);
             tcount = 0;
@@ -292,7 +292,7 @@ public class ScoreKeeper : MonoBehaviour
     }
     IEnumerator ReloadCombo()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(4f);
         reload = false;
     }
 }

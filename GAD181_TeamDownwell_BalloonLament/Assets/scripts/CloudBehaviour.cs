@@ -23,7 +23,7 @@ public class CloudBehaviour : MonoBehaviour
     }
     void OnCollisionEnter2D (Collision2D collision)
     {
-        if (collision.gameObject.name.Contains("bullet01"))
+        if (collision.gameObject.name.Contains("FlameBall")||collision.gameObject.name.Contains("TripleBall"))
         {
             --health;
             if (health < 1)
