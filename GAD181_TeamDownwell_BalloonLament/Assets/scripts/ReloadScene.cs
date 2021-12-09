@@ -22,7 +22,7 @@ public class ReloadScene : MonoBehaviour
     }
     IEnumerator Restart()
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("BalloonLament");
     }
 }
