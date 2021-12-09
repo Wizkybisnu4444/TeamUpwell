@@ -76,7 +76,10 @@
     <Compile Include="Assets\scripts\bulletScript.cs" />
     <Compile Include="Assets\scripts\GameOverCountdown.cs" />
     <Compile Include="Assets\scripts\playerMovement.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\scripts\QuitGame.cs" />
+=======
+>>>>>>> parent of b9a7af15 (Pause and Quit functions added)
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
